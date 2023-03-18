@@ -12,8 +12,9 @@ builder.Services.AddEndpointsApiExplorer();
 
 
 builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("RepositoryPatternConn")));
-
+builder.Services.AddTransient<IUnitOfWork, UnitofWork>();
 #region Repositories
+
 builder.Services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddTransient<IDeveloperRepository, DeveloperRepository>();
 builder.Services.AddTransient<IProjectRepository, ProjectRepository>();
