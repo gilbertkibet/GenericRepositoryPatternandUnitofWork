@@ -1,3 +1,4 @@
+using Core.Interfaces;
 using Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +12,12 @@ builder.Services.AddEndpointsApiExplorer();
 
 
 builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("RepositoryPatternConn")));
+
+#region Repositories
+builder.Services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddTransient<IDeveloperRepository, DeveloperRepository>();
+builder.Services.AddTransient<IProjectRepository, ProjectRepository>();
+#endregion
 
 builder.Services.AddSwaggerGen();
 
