@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepositoryPatternandUnitofWork", "GenericRepositoryPatternandUnitofWork\GenericRepositoryPatternandUnitofWork.csproj", "{D212D414-042A-46F4-8178-60030FAC410D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericRepositoryPatternandUnitofWorkAPI", "GenericRepositoryPatternandUnitofWork\GenericRepositoryPatternandUnitofWorkAPI.csproj", "{D212D414-042A-46F4-8178-60030FAC410D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{38D9F9EB-3BEE-4BC1-BC66-8741953FBE58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{38D9F9EB-3BEE-4BC1-BC66-8741953FBE58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{F18E2ECB-8DD5-4902-922B-EC0BFAC0A49A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{F18E2ECB-8DD5-4902-922B-EC0BFAC0A49A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{CCA2E9D9-D5B2-4752-BB37-FE9CD388451B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{CCA2E9D9-D5B2-4752-BB37-FE9CD388451B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
